@@ -1,0 +1,117 @@
+body {
+    section.team {
+        .team-container {
+            margin-left: 180px;
+            margin-right: 80px;
+            height: 60%;
+            position: relative;
+            top: 250px;
+
+            .swiper-3d .swiper-slide-shadow {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+
+            .swiper {
+                width: 50%;
+                height: 75%;
+                margin-top: 50px;
+
+                .swiper-pagination {
+                    bottom: -50px;
+
+
+                    .swiper-pagination-bullet {
+                        background: white;
+
+                        &:last-child {
+                            display: none;
+                        }
+
+                    }
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    color: white;
+                }
+
+                .swiper-button-next {
+                    right: -50px;
+                }
+
+                .swiper-button-prev {
+                    left: -50px;
+                }
+
+                .swiper-slide {
+                    border: 2px solid white;
+                    background-color: black;
+                    border-radius: 8px;
+
+                    .swiper-container {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        align-content: space-between;
+
+                        h3 {
+                            width: 100%;
+                            margin-top: 25px;
+                            text-align: center;
+                            font-family: 'Bangers';
+                        }
+
+                        .swiper-content {
+                            display: flex;
+                            height: 100%;
+
+
+                            .swiper-image {
+                                width: 60%;
+                                height: 90%;
+                                display: flex;
+                                align-items: flex-end;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .swiper-text {
+                                max-width: 50%;
+                                width: 50%;
+                                height: 87%;
+                                display: flex;
+                                font-size: 20px;
+                                align-items: center;
+                                padding: 0 25px 0 0;
+                                font-family: 'Quicksand';
+                                color: white;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                p {
+                                    text-align: center;
+                                }
+
+                                .social {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+                                    justify-content: space-around;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+body {
+    position: relative;
+
+    .notification-container {
+        display: none;
+    }
+
+    section.home {
+
+        h1 {
+            font-size: 12vw;
+        }
+    }
+
+    h2 {
+        font-size: 11vw !important;
+        top: 8% !important;
+    }
+
+    section {
+        h3 {
+            font-size: 40px;
+            margin: 0px 15px;
+        }
+    }
+
+
+
+    section.home {
+        .home-container {
+            flex-direction: column;
+
+            .card-container {
+                margin-left: 0;
+                top: 30px;
+            }
+
+            #card {
+                animation: cardAnimation 4s infinite;
+            }
+
+            .home-title {
+
+                div.slogan {
+                    font-size: 5vw;
+                }
+
+                &::before {
+                    animation: titleApparition 1s ease-out;
+                }
+
+                &::after {
+                    animation: titleApparition 1.5s ease-out;
+                }
+            }
+        }
+
+    }
+
+    a.logo {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+
+        .gangsters-gif {
+            width: 50px;
+        }
+    }
+
+    .nav-mobile {
+        position: fixed;
+        background: white;
+        top: 25px;
+        right: 25px;
+        z-index: 98;
+
+
+    }
+
+    .navigation {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        background-color: white;
+        z-index: 99;
+        display: none;
+
+
+        &.active {
+            display: initial;
+        }
+
+        &::before {
+            content: 'X';
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+        ul {
+            width: 100%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            a {
+                z-index: 999;
+                color: rgb(0, 0, 0);
+                background-color: #fff;
+                height: 60px;
+                width: fit-content;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                text-decoration: none;
+                text-align: right;
+                margin-bottom: 10px;
+                font-size: 28px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-right: 25px;
+                border-radius: 0 50px 50px 0;
+                transition: all .3s ease;
+            }
+        }
+    }
+}

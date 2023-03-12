@@ -1,0 +1,75 @@
+body {
+    .social-media-container {
+        height: 100%;
+        position: fixed;
+        left: 0px;
+        z-index: 5;
+
+        .social-media {
+            top: 50%;
+            -ms-transform: translateY(-50%) !important;
+            transform: translateY(-50%) !important;
+            position: fixed;
+            bottom: 300px;
+            right: 25px;
+            height: 125px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.100);
+            padding: 20px 5px 10px 5px;
+            border-radius: 25px;
+            z-index: 5;
+        }
+
+        .discord {
+            #members {
+                padding: 5px 7px;
+                background-color: greenyellow;
+                border-radius: 50px;
+                position: absolute;
+                color: #000;
+                font-size: 12px;
+                font-weight: 900;
+                font-family: Calibri, 'Trebuchet MS', sans-serif;
+                top: -7px;
+                right: -7px;
+            }
+
+            img {
+                width: 35px;
+                height: 40px;
+            }
+        }
+
+        .twitter {
+            img {
+                width: 40px;
+                height: 30px;
+            }
+        }
+
+        .discord,
+        .twitter {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #members,
+            img {
+                animation: rotate .3s ease-out;
+            }
+
+            &:hover {
+
+                img,
+                #members {
+                    animation: rotateInverse .3s ease-out;
+                }
+            }
+
+
+        }
+    }
+}

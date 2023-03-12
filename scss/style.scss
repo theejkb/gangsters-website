@@ -1,0 +1,311 @@
+@import './components/navbar.scss';
+@import './components/social-media.scss';
+@import './components/card.scss';
+@import './components/base.scss';
+@import './components/slick.scss';
+@import './components/cursor.scss';
+
+@import './section/home.scss';
+@import './section/about.scss';
+@import './section/team.scss';
+@import './section/roadmap.scss';
+@import './section/faq.scss';
+@import './section/loader.scss';
+
+@font-face {
+    font-family: Blacklisted;
+    src: url('/fonts/Blacklisted.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    // &,
+    // * {
+    //     cursor: none;
+    // }
+    ::selection {
+        color: black;
+        background: white;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    @import './1100up/base.scss';
+    @import './1100up/navigation.scss';
+}
+
+@media only screen and (max-width: 1100px) {
+    @import './1100down/base.scss';
+    @import './1100down/swiper.scss';
+    @import './1100down/team.scss';
+    @import './1100down/faq.scss';
+    @import './1100down/home.scss';
+    @import './1100down/about.scss';
+    @import './1100down/roadmap.scss'
+}
+
+@media only screen and (max-width: 768px) {
+    @import './768down/team.scss';
+    @import './768down/faq.scss';
+    @import './768down/home.scss';
+    @import './768down/base.scss';
+    @import './768down/about.scss';
+    @import './768down/card.scss';
+}
+
+// ANIMATION
+@keyframes backgroundParticles {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotateInverse {
+    from {
+        transform: rotate(359deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes titleApparition {
+    0% {
+        left: -150px;
+        top: -10px;
+        width: 250%;
+        height: 155%;
+        display: block;
+    }
+
+    99% {
+        top: -10px;
+        left: 185%;
+        height: 155%;
+        width: 0px;
+    }
+
+    100% {
+        height: 125%;
+        display: none;
+    }
+}
+
+@keyframes sloganApparition {
+    0% {
+        width: 150%;
+        left: -10px;
+        top: -10px;
+        height: 110%;
+        display: block;
+    }
+
+    50% {
+        width: 150%;
+        left: -10px;
+        top: -10px;
+        height: 120%;
+    }
+
+    99% {
+        top: 100%;
+        width: 150%;
+        height: 120%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes h2Apparition {
+    0% {
+        right: -100%
+    }
+
+    50% {
+        right: -100%
+    }
+
+    100% {
+        right: 0%
+    }
+}
+
+@keyframes contentApparition {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    65% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes cardContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    75% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes keyboardApparition {
+    0% {
+        left: -10%;
+        width: 150%;
+        display: block;
+    }
+
+    90% {
+        left: -10%;
+        width: 150%;
+    }
+
+    99% {
+        left: 110%;
+        width: 0px;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounceLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bounceRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pulsate {
+
+    100% {
+        text-shadow:
+            0 0 4px rgb(146, 146, 146),
+            0 0 8px rgb(146, 146, 146);
+    }
+
+    0% {
+        text-shadow:
+            0 0 8px rgb(146, 146, 146),
+            0 0 16px rgb(146, 146, 146);
+    }
+}
+
+@keyframes cardAnimation {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(0deg) rotateY(-15deg);
+    }
+
+    75% {
+        transform: rotateX(-7deg) rotateY(15deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+
+}
+
+@keyframes notificationAppear {
+    0% {
+        transform: translateX(500px);
+    }
+
+    80% {
+        transform: translateX(500px);
+    }
+
+    95% {
+        transform: translateX(0px);
+    }
+
+    90% {
+        transform: translateX(-50px) skewX(10deg);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

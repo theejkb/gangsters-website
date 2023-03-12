@@ -1,0 +1,101 @@
+    html.docSlider-id_section-home {
+        .navigation ul li a#home {
+            transform: translateX(-80px);
+        }
+    }
+
+    html.docSlider-id_section-vision {
+        .navigation ul li a#vision {
+            transform: translateX(-80px);
+        }
+    }
+
+    html.docSlider-id_section-team {
+        .navigation ul li a#team {
+            transform: translateX(-80px);
+        }
+    }
+
+    html.docSlider-id_section-roadmap {
+        .navigation ul li a#roadmap {
+            transform: translateX(-80px);
+        }
+    }
+
+    html.docSlider-id_section-faq {
+        .navigation ul li a#faq {
+            transform: translateX(-80px);
+        }
+    }
+
+    html.docSlider-id_section-litepaper {
+        .navigation ul li a#litepaper {
+            transform: translateX(-80px);
+        }
+    }
+
+
+    body {
+        #burger {
+            display: none;
+        }
+
+        a.logo {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 100px;
+            height: 100px;
+
+            .gangsters-gif {
+                width: 100px;
+            }
+        }
+
+        .navigation {
+            height: 100%;
+            position: fixed;
+            left: 0px;
+            z-index: 5;
+
+            ul {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                height: 50%;
+                max-width: 300px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                a {
+                    color: rgb(0, 0, 0);
+                    background-color: #fff;
+                    height: 60px;
+                    width: 200%;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: flex-end;
+                    text-decoration: none;
+                    text-align: right;
+                    margin-bottom: 10px;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    font-family: 'Bangers';
+                    font-weight: 600;
+                    padding-right: 25px;
+                    border-radius: 0 50px 50px 0;
+                    transition: all .3s ease;
+                    transform: translateX(-120px);
+
+                    &:hover {
+                        transform: translateX(-80px);
+                    }
+                }
+            }
+        }
+    }

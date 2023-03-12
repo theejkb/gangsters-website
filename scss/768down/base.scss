@@ -1,0 +1,38 @@
+  p,
+  li {
+    font-size: 18px;
+  }
+
+
+
+  body {
+    section {
+      h2 {
+        top: 12% !important;
+        font-size: 60px !important;
+      }
+
+      h3 {
+        font-size: 30px;
+
+      }
+    }
+
+    .social-media-container {
+      .social-media {
+        top: 89%;
+        height: 90px;
+      }
+    }
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 500px;
+
+    .slick-prev,
+    .slick-next {
+      bottom: -40px;
+    }
+
+  }

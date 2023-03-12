@@ -1,0 +1,42 @@
+body {
+    section.team {
+        .team-container {
+            top: 20%;
+            margin-left: 55px;
+            margin-right: 80px;
+            margin-top: 50px;
+            height: 70%;
+
+            .swiper {
+                height: 90%;
+                width: 100%;
+
+                .swiper-slide {
+                    .swiper-container {
+                        .swiper-content {
+                            flex-direction: column-reverse;
+                            align-items: center;
+
+                            .swiper-image {
+                                width: 100%;
+                                height: 80%;
+                                max-width: 300px;
+                            }
+
+                            .swiper-text {
+                                height: 30%;
+                                max-width: fit-content;
+                                text-align: center;
+                                font-family: 'Quicksand';
+                                position: relative;
+                                top: 0px;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

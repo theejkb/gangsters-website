@@ -1,0 +1,35 @@
+.slider-container {
+    .slider-next {
+        display: none !important;
+    }
+
+    .slick-list {
+        .slick-track {
+            left: 0px;
+
+            .slick-slide {
+                &.slick-current {
+                    margin-top: 10px;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 15px;
+
+            button {
+                display: none;
+            }
+
+            &::marker {
+                color: white;
+            }
+        }
+    }
+}

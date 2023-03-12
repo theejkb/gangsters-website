@@ -1,0 +1,37 @@
+body {
+    section.team {
+        .team-container {
+            margin-left: 20px;
+            margin-right: 85px;
+            height: 60%;
+            position: relative;
+            top: 20%;
+
+            .swiper {
+                width: 80%;
+                height: 100%;
+
+                .swiper-slide {
+                    .swiper-container {
+                        .swiper-content {
+                            height: 70%;
+
+                            .swiper-image,
+                            .swiper-text {
+                                height: 100%;
+                            }
+
+                            .swiper-text {
+                                max-width: 30%;
+                                padding: 0;
+                                margin-top: 25px;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

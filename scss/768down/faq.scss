@@ -1,0 +1,35 @@
+body {
+    section.faq {
+        .faq-container {
+            margin-left: 25px;
+            margin-right: 25px;
+            padding: 0px;
+            height: 65%;
+            position: relative;
+            top: 175px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .swiper-faq {
+                margin: 0px auto;
+                width: 700px;
+                height: 100%;
+                overflow: hidden;
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    top: 88%;
+                }
+
+                .swiper-text {
+                    padding: 0;
+                }
+
+                li {
+                    padding: 0px 25px;
+                }
+            }
+        }
+    }
+}

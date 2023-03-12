@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    background-color: #08090d;
+    font-family: 'Bangers', cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    .hidden {
+        display: none;
+    }
+
+    #particles-js {
+        height: 100%;
+        width: 100%;
+        animation: backgroundParticles 3s ease-out;
+    }
+
+    .notification-container {
+        z-index: 999;
+        font-family: 'Syne';
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 350px;
+        padding: 25px;
+        border-radius: 8px;
+        display: flex;
+        animation: notificationAppear 4s ease-out;
+        transition: .3s ease-in;
+        align-items: center;
+
+        &.closed {
+            transform: translateX(500px);
+            transition: .3s ease-in;
+        }
+
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        img {
+            margin-right: 25px;
+        }
+    }
+
+    section {
+        h1 {
+            color: white;
+            font-size: 120px;
+            bottom: 100px;
+            animation: pulsate 2s infinite alternate;
+        }
+
+        h2 {
+            opacity: 0;
+            transition: .3s ease-in;
+        }
+
+        >div {
+            opacity: 0;
+            transition: .3s ease-in;
+        }
+
+        &.docSlider-current {
+            h2 {
+                opacity: 1;
+                transition: .3s ease-in;
+                animation: h2Apparition 0.7s ease-out;
+            }
+
+            >div {
+                opacity: 1;
+                transition: .3s ease-in;
+            }
+
+            >div:not(.home-container) {
+                animation: contentApparition 1s ease-in;
+            }
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            font-weight: 500;
+            font-family: 'Bangers', sans-serif;
+            position: absolute;
+            top: 6%;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            right: 0px;
+        }
+
+        h3 {
+            font-family: 'Bangers', sans-serif;
+            color: white;
+            font-size: 40px;
+        }
+
+        .swiper-button-disabled {
+            display: none;
+        }
+
+
+    }
+}

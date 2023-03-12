@@ -1,0 +1,50 @@
+body {
+    section.home {
+        .home-container {
+            height: 80%;
+            margin-top: 22%;
+
+            .navigation-arrow {
+                display: none;
+            }
+
+            h1 {
+                font-size: 16vw;
+                text-align: center;
+            }
+
+            .navigation-arrow {
+                bottom: 25px;
+            }
+
+            .container-title {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                flex-direction: column-reverse;
+                align-items: center;
+                top: -50px;
+
+                .slogan {
+                    top: 75px;
+                    line-height: 40px;
+
+                    .born {
+                        font-size: 40px !important;
+                    }
+
+                    .to {
+                        font-size: 50px !important;
+
+                    }
+
+                    .kill {
+                        font-size: 60px !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
