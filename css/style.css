@@ -333,6 +333,7 @@ body .social-media-container .twitter:hover #members {
   left: 0;
   bottom: 0px;
   box-shadow: 0 0px 50px rgba(0, 255, 255, 0.466);
+  border-radius: 8px;
 }
 .card-container .card .card-content {
   position: relative;
@@ -340,6 +341,7 @@ body .social-media-container .twitter:hover #members {
   height: 100%;
   border: 1px solid rgb(99, 99, 99);
   background: black;
+  border-radius: 8px;
 }
 .card-container .card .card-content .card-text {
   transform-style: preserve-3d;
